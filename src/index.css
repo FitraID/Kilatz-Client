@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card-white {
+    @apply bg-neutral-100 px-5 py-5 shadow-xl rounded-md;
+  }
+  
+  .card-white-no-px {
+    @apply bg-neutral-100 py-5 shadow-xl rounded-md;
+  }
+  
+  .card-white-no-px-py {
+    @apply bg-neutral-100 shadow-xl rounded-md;
+  }
+  
+  .table-1 > thead > tr > th:nth-child(1) {
+    @apply px-5 border border-neutral-700 text-center;
+  }
+  
+  .table-1 > thead > tr > th:nth-child(2) {
+    @apply px-32 border border-neutral-700 text-start;
+  }
+  
+  .table-1 > thead > tr > th {
+    @apply px-5 border border-neutral-700 text-start;
+  }
+  
+  .table-1 > tbody > tr > td {
+    @apply px-5 border border-neutral-700 text-start;
+  }
+  
+  .table-primary {
+    @apply w-full;
+  }
+  
+  /* .table-primary > thead > tr {
+    @apply bg-neutral-300;
+  } */
+  
+  .table-primary > thead > tr > th {
+    @apply bg-neutral-300 font-semibold px-2 py-1;
+  }
+  
+  .table-primary > tbody > tr > td:nth-child(1) {
+    @apply text-start ps-2;
+  }
+  
+  .table-primary > tbody > tr > td {
+    @apply text-center py-2;
+  }
+  
+  .input-primary {
+    @apply ring-neutral-500 focus:outline-1 focus:ring-primary-500 focus:shadow-md focus:shadow-primary-500 ring-[0.5px] outline-none rounded-sm px-3 py-2 transition-all;
+  }
+  
+  .button-primary {
+    @apply bg-primary-500 hover:bg-primary-600 active:bg-primary-400 text-neutral-100 px-5 py-3 rounded shadow-md transition-all;
+  }
+  
+  .input-login {
+    background-color: #efefef;
+    @apply w-full h-12 rounded-lg px-5 outline-none focus:outline-1 focus:outline-primary-300 focus:bg-neutral-50 focus:shadow-primary-300 transition-all;
+  }
+  
